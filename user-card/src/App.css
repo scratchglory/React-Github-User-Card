@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.follower-card {
+  width: 300px;
+  margin: 5%;
+  display: flex;
+  box-shadow: 3px 3px 5px 7px;
+}
