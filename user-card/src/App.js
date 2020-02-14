@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import axios from "axios";
-import UserCard from "./UserCard";
+import UserCard, { Retrospect } from "./UserCard";
+// import Retrospect from "./Retrospect"
 
 class App extends React.Component {
   // constructor() {
@@ -39,6 +40,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>The Secrets of {this.state.user.login}'s Github</h1>
+        <Retrospect />
         <UserCard user={this.state.user} followers={this.state.followers} />
       </div>
     );
